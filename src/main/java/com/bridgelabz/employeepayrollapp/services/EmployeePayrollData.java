@@ -1,0 +1,45 @@
+package com.bridgelabz.employeepayrollapp.services;
+
+import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
+
+public class EmployeePayrollData {
+
+//VARIABLES
+    private  int employeeId;
+    private String name;
+    private long salary;
+//CONSTRUCTOR
+    public EmployeePayrollData() {
+    }
+
+    public EmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO) {
+        this.employeeId = empId;
+        this.name = empPayrollDTO.name;
+        this.salary = empPayrollDTO.salary;
+    }
+ //GETTER AND SETTER
+
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public long getSalary() {
+        return salary;
+    }
+
+    public void setSalary(long salary) {
+        this.salary = salary;
+    }
+}
