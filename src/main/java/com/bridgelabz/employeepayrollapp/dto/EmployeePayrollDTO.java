@@ -6,7 +6,13 @@ public class EmployeePayrollDTO {
     public  long salary;
 
 
-   //OVERIDE TOSTRING
+    //CONSTRUCTOR
+    public EmployeePayrollDTO(String name, long salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    //OVERIDE TOSTRING
     @Override
     public String toString() {
         return "EmployeePayrollDTO{" +
