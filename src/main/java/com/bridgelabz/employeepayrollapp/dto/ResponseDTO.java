@@ -1,6 +1,9 @@
 package com.bridgelabz.employeepayrollapp.dto;
+
+import lombok.Data;
+
 //POJO CLASS
-public class ResponseDTO {
+public @Data class ResponseDTO {
     //PRIVATE VARIABLES
     private String message;
     private Object data;
@@ -12,19 +15,19 @@ public class ResponseDTO {
     }
 
     //GETTERES AND SETTERS
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public Object getData() {
-        return data;
-    }
-
-    public void setData(Object data) {
-        this.data = data;
-    }
+//    public String getMessage() {
+//        return message;
+//    }
+//
+//    public void setMessage(String message) {
+//        this.message = message;
+//    }
+//
+//    public Object getData() {
+//        return data;
+//    }
+//
+//    public void setData(Object data) {
+//        this.data = data;
+//    }
 }
