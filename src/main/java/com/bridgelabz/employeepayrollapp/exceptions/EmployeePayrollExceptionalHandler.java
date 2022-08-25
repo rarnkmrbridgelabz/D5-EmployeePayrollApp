@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @ControllerAdvice
-@Slf4j  
+@Slf4j
 public class EmployeePayrollExceptionalHandler {
 
     private static final String message = "Exception while processing REST Request";
